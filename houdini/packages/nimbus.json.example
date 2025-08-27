@@ -1,0 +1,21 @@
+{
+  "enable": true,
+  "path_root": "REPLACE_WITH_YOUR_LOCAL_PATH",
+  "env": [
+    {
+      "HOUDINI_PACKAGE_VERBOSE": "1"
+    }
+  ],
+  "path": [
+    "$PATH_ROOT/houdini"
+  ],
+  "otl_scan_path": [
+    "$PATH_ROOT/houdini/otls"
+  ],
+  "pythonpath": [
+    "$PATH_ROOT/houdini/python3.10libs"
+  ],
+  "toolbar": [
+    "$PATH_ROOT/houdini/toolbar"
+  ]
+}

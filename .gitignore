@@ -1,0 +1,14 @@
+.DS_Store
+Thumbs.db
+*.pyc
+__pycache__/
+build/
+dist/
+*.hip*
+*.lock
+*.log
+*.bak
+*.orig
+*.zip
+*.tar.gz
+houdini/*/*.userprefs
