@@ -17,7 +17,7 @@ only what they need:
 
 ### 1) Clone
 ```bash
-git clone https://github.com/<YOUR-ORG-OR-USER>/nimbus.git
+git clone https://github.com/FXTD-Pushkar/nimbus.git
 ```
 
 ### 2) Install via Houdini Package (recommended)
