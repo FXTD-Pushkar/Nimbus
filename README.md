@@ -53,17 +53,17 @@ Nimbus HDAs will be discovered in `$HSITE/otls/Nimbus/`.
 - Auto‑versioning with `ver_list` dropdown sync
 - Cache orchestration per‑ext: `bgeo.sc`, `vdb`, `abc`, `usd` (+ Niagara/VAT)
 - Farm submission: HQueue + Deadline
-- Post‑cache hooks: save backup `.hip`, email notify, flipbook to /review, ShotGrid upload
-- SOP/ROP parameter sync and dynamic soppath resolution
-- Black‑box asset option (locked HDAs, no dive‑inside)
+- Post-cache hooks: save backup `.hip`, email notify
+- Flipbook (image sequence + mp4) to /review.
 
 ---
 
 ## Compatibility
 
-- Houdini: 20.0–20.5+ (tested), 21.x (WIP)
-- Platforms: Windows/Linux/macOS
-- Renderers: Karma/Mantra/Arnold/Redshift (pipeline‑agnostic)
+- Houdini: 20.0, 20.5 (tested) – 21.x (tested)
+- Platforms: Windows (tested), Linux/macOS (not yet tested)
+- Renderers: Karma (tested), Mantra/Arnold/Redshift (not yet tested, pipeline-agnostic)
+
 
 ---
 
