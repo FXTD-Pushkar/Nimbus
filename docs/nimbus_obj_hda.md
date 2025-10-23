@@ -48,20 +48,7 @@ It standardizes how HIP files are saved, ensuring consistent paths for assets, c
 
 ### 🧱 Folder Structure Example
 
-E:/Houdini/NimbusDemo/
-├─ assets/
-├─ cache/
-├─ flipbook/
-├─ hip/
-│  ├─ demo_01/
-│  │  ├─ backup/
-│  │  ├─ temp/
-│  │  ├─ NimbusDemo_demo_01_sh02_pushkar_fx_001_v014.hiplc
-│  │  └─ NimbusDemo_demo_01_sh02_pushkar_fx_002_v001.hiplc
-│  ├─ demo_02/
-│  └─ demo_03/
-├─ render/
-└─ usd/
+<pre> E:/Houdini/NimbusDemo/ ├─ assets/ ├─ cache/ ├─ flipbook/ ├─ hip/ │ ├─ demo_01/ │ │ ├─ backup/ │ │ ├─ temp/ │ │ ├─ NimbusDemo_demo_01_sh02_pushkar_fx_001_v014.hiplc │ │ └─ NimbusDemo_demo_01_sh02_pushkar_fx_002_v001.hiplc │ ├─ demo_02/ │ └─ demo_03/ ├─ render/ └─ usd/ </pre>
 
 
 
