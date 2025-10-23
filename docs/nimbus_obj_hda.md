@@ -46,7 +46,7 @@ It standardizes how HIP files are saved, ensuring consistent paths for assets, c
 
 ---
 
-### 🧱 #### Folder Structure Example
+### 🧱 4️⃣ Folder Structure Example
 
 
 ```
@@ -71,7 +71,7 @@ E:/Houdini/NimbusDemo/
 
 ---
 
-### 🧾 File Naming Convention
+### 🧾 5️⃣ File Naming Convention
 
 | **Component** | **Meaning** |
 |----------------|-------------|
@@ -86,7 +86,7 @@ E:/Houdini/NimbusDemo/
 ---
 
 
-### 🌐 Environment Variables
+### 🌐 6️⃣ Environment Variables
 
 When a project is created using the **Nimbus Object HDA**, the following Houdini environment variables are automatically set.  
 These variables dynamically adapt based on your **Project / Scene / Shot** setup and are available globally across your scene.
@@ -110,7 +110,7 @@ $CACHE/demo12/bgeo/nimbuscache/v003/nimbuscache_v003.$F4.bgeo.sc
 
 ```
 
-### 🎬 Flipbook Controls
+### 🎬 7️⃣ 🎬 Flipbook Controls
 
 The **Flipbook** section in Nimbus provides a streamlined way to generate OpenGL previews and automatically organize them into versioned folders.  
 Each flipbook render and MP4 file follows the project naming convention and is saved under the `$FLIPBOOK` directory.
