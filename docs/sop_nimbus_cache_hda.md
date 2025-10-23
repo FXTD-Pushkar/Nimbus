@@ -25,27 +25,28 @@ This makes it ideal for maintaining version-safe, reproducible simulations in bo
 
 ## 3️⃣ UI Reference
 
-| Parameter                      | Description                                                                                                 |
-| :----------------------------- | :---------------------------------------------------------------------------------------------------------- |
-| **Load from Disk**             | Reads cached geometry from disk instead of recooking the SOP network. Useful for quick reloads and reviews. |
-| **Save to Disk**               | Starts caching in the foreground.                                                                           |
-| **Save to Disk in Background** | Starts caching as a background process so you can continue working.                                         |
-| **Cancel Cook**                | Stops the active caching process.                                                                           |
-| **Evaluate As**                | Defines how to evaluate — typically **Frame Range** for sequence output.                                    |
-| **Start / End / Inc**          | Specifies frame range and step size for caching (Inc = step, default `1`).                                  |
-| **Initialize Simulation OPs**  | Reinitializes DOPs or SOP solvers before caching to ensure a clean sim state.                               |
----
+A) Naming & Paths
+Parameter	Description
+Name	Logical cache name used for folder and file naming.
+Cache Path	Full resolved output path (read-only). Derived automatically from the OBJ Nimbus environment variables (e.g. $CACHE).
+Cache Directory	Root directory for the cache files (usually $CACHE). You can browse or override this path if needed.
+Extension	Defines the file format for cached output. NimbusCache supports multiple export types, allowing flexibility for different workflows:
 
-### B) Versioning
-| Control | What it does |
-|---|---|
-| **Auto Versioning** | Bumps to the next **major** version on save (e.g., `v003 → v004`). |
-| **Version slider** | Manually preview/set a version. |
-| **Latest Version** | Jumps to the highest existing version on disk. |
-| **Approved Cache** | Optional flag to mark a version as approved ( visual cue for the team ). |
+.bgeo.sc — Standard Houdini geometry cache (fast & compressed). (Default option)
 
-> **Naming reminder**  
-> HIP naming uses **minor + major** (e.g., `_001_v014`). Cache versions typically track **major**: `v001`, `v002`, `v003…`.
+.vdb — Sparse volumetric data (smoke, fire, or fog).
+
+.abc — Alembic format for DCC interchange (e.g. Maya, Blender).
+
+.usd — USD layer export (for Solaris or Unreal workflows).
+
+.hbjson — Houdini Bake JSON (for Niagara FX export in Unreal Engine).
+
+Example Path:
+E:/Houdini/NimbusDemo/cache/demo12/bgeo/nimbuscache/v003/nimbuscache_v003.$F4.bgeo.sc
+
+💡 Tip:
+Changing the extension automatically creates a corresponding subfolder (e.g. /bgeo/, /vdb/, /usd/) — keeping cache formats neatly organized and separated.
 
 ---
 
