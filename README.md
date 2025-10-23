@@ -5,7 +5,7 @@
 It includes three HDAs you can use separately or together:
 
 - **Nimbus (OBJ level)** – Project and shot manager  
-- **Nimbus Cache (SOP level)** – Exports caches like `.bgeo.sc`, `.vdb`, `.abc`, `.usd`, or Niagara/VAT  
+- **Nimbus Cache (SOP level)** – Exports caches like `.bgeo.sc`, `.vdb`, `.abc`, `.usd`, or Niagara
 - **ROP NimbusCache (OUT level)** – Handles multi-stage caching, auto-versioning, and post-cache tasks (email, flipbook, ShotGrid, etc.)
 
 ---
