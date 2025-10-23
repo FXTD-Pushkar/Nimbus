@@ -42,10 +42,10 @@ Extension	Defines the file format for cached output. NimbusCache supports the fo
   • .usd — USD layer export (for Solaris or Unreal workflows).
 	
   • .hbjson — Houdini Bake JSON (Niagara export for Unreal Engine).	
-
+```
 Example Path
 E:/Houdini/NimbusDemo/cache/demo12/bgeo/nimbuscache/v003/nimbuscache_v003.$F4.bgeo.sc
-
+```
 💡 Tip:
 Changing the extension automatically creates a corresponding subfolder (e.g. /bgeo/, /vdb/, /usd/) to keep cache formats organized.
 
