@@ -26,15 +26,23 @@ This makes it ideal for maintaining version-safe, reproducible simulations in bo
 ## 3️⃣ UI Reference
 
 ### A) Naming & Paths
-| Control | What it does |
-|---|---|
-| **Name** | Logical cache name. Used in folder/file naming. |
-| **Cache Path** | Full resolved output (read-only). Comes from the OBJ Nimbus variables (e.g. `$CACHE`). |
-| **Cache Directory** | Base directory (usually `$CACHE`). You can browse to verify. |
-| **Extension** | Output type: typically `.bgeo.sc` (fast & compressed). |
+Control	What it does
+Name	Logical cache name. Used for folder and file naming.
+Cache Path	Full resolved output path (read-only). Derived from the OBJ Nimbus environment variables (e.g. $CACHE).
+Cache Directory	Base directory (usually $CACHE). You can browse or override as needed.
+Extension	Defines the file format for cached output. NimbusCache supports multiple export types:
 
-> **Example path**  
-> `E:/Houdini/NimbusDemo/cache/demo12/bgeo/nimbuscache/v003/nimbuscache_v003.$F4.bgeo.sc`
+• .bgeo.sc — Standard Houdini geometry cache (fast & compressed). (Default option)
+• .vdb — Sparse volumetric data (smoke, fire, or fog).
+• .abc — Alembic format for DCC interchange (e.g. Maya, Blender).
+• .usd — USD layer export for Solaris or Unreal workflows.
+• .hbjson — Houdini Bake JSON (Niagara) for real-time FX in Unreal Engine.
+
+Example path
+E:/Houdini/NimbusDemo/cache/demo12/bgeo/nimbuscache/v003/nimbuscache_v003.$F4.bgeo.sc
+
+💡 Tip:
+Changing the extension automatically creates a corresponding subfolder (e.g. /bgeo/, /vdb/, /usd/) to keep cache formats organized.
 
 ---
 
