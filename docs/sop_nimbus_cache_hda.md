@@ -48,6 +48,19 @@ E:/Houdini/NimbusDemo/cache/demo12/bgeo/nimbuscache/v003/nimbuscache_v003.$F4.bg
 💡 Tip:
 Changing the extension automatically creates a corresponding subfolder (e.g. /bgeo/, /vdb/, /usd/) — keeping cache formats neatly organized and separated.
 
+
+---
+
+B) bgeo Controls
+Parameter	Description
+Load from Disk	Reads cached geometry from disk instead of recooking the SOP network. Useful for quick reloads and reviews.
+Save to Disk	Starts caching in the foreground.
+Save to Disk in Background	Starts caching as a background process so you can continue working.
+Cancel Cook	Stops the active caching process.
+Evaluate As	Defines how to evaluate — typically Frame Range for sequence output.
+Start / End / Inc	Specifies frame range and step size for caching (Inc = step, default 1).
+Initialize Simulation OPs	Reinitializes DOPs or SOP solvers before caching to ensure a clean sim state.
+
 ---
 
 ### C) Caching (bgeo)
