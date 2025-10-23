@@ -32,11 +32,12 @@ It includes three HDAs you can use separately or together:
 
 ## ⚙️ Key Features
 
-- Simple project and shot setup  
-- Automatic folder creation and versioning  
-- Export multiple formats: `.bgeo.sc`, `.vdb`, `.abc`, `.usd`, Niagara/VAT  
-- Farm submission (HQueue + Deadline)  
-- Post-cache hooks: save `.hip`, email notify, flipbook to `/review`  
+- Project/shot naming presets and environment variable mapping (HIP, USD, CACHE, REVIEW)
+- Auto‑versioning with `ver_list` dropdown sync
+- Cache orchestration per‑ext: `bgeo.sc`, `vdb`, `abc`, `usd` (+ Niagara)
+- Farm submission: HQueue + Deadline
+- Post‑cache hooks: save backup `.hip`, email notify, flipbook to /review
+- SOP/ROP parameter sync and dynamic soppath resolution
 
 
 ---
