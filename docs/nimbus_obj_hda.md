@@ -110,7 +110,7 @@ $CACHE/demo12/bgeo/nimbuscache/v003/nimbuscache_v003.$F4.bgeo.sc
 
 ```
 
-### 🎬 7️⃣ 🎬 Flipbook Controls
+### 🎬 7️⃣ Flipbook Controls
 
 The **Flipbook** section in Nimbus provides a streamlined way to generate OpenGL previews and automatically organize them into versioned folders.  
 Each flipbook render and MP4 file follows the project naming convention and is saved under the `$FLIPBOOK` directory.
@@ -146,17 +146,21 @@ E:/Houdini/NimbusDemo/flipbook/demo12/
 │ └─ NimbusDemo_demo12_pushkar_fx_001_v024.mp4
 ```
 
-### ✅ Summary
+## ✅ Summary
 
-Nimbus (OBJ level) provides:
-- Clean project and version structure.
-- Automatic artist and department tagging.
-- Consistent environment variable setup.
-- Simplified navigation and naming automation.
+**Nimbus (OBJ Level HDA)** provides:
 
-This ensures every project you start in Houdini follows a consistent, scalable pipeline — ideal for both solo and team workflows.
+- 🧩 **Clean project, scene, and version structure** — automatically creates and organizes directories for assets, caches, renders, and USDs.  
+- 👥 **Automatic artist and department tagging** — auto-fills artist name from the system user and allows department selection.  
+- ⚙️ **Consistent environment variable setup** — auto-creates `$CACHE`, `$USD`, `$ASSET`, `$FLIPBOOK`, and `$RENDER` paths for global access.  
+- 🗂️ **Simplified navigation and naming automation** — handles versioning, shot naming, and file paths with clean, predictable conventions.  
+- 🎬 **Integrated flipbook management** — quickly render, version, and review OpenGL previews directly from the HDA.  
+- 🧠 **Pipeline-ready structure** — fully compatible with HQueue, Deadline, and other Nimbus ROP tools.
 
 ---
+
+This ensures every Houdini project you start follows a **consistent, scalable, and studio-friendly pipeline** —  
+ideal for both individual artists and collaborative production teams.
 
 
 
