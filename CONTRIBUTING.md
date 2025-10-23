@@ -15,15 +15,6 @@ If you spot an issue or have an idea for improvement:
 
 ---
 
-## ⚙️ Local Setup (optional)
-
-If you'd like to explore the code:
-1. Clone the repo.  
-2. Duplicate `houdini/packages/nimbus.json.example` → `nimbus.json`  
-3. Edit `path_root` to point to your local Nimbus directory.  
-4. Launch Houdini — you should see a **Nimbus** shelf.
-
----
 
 ### 🚀 Note
 Nimbus is actively being improved.  
