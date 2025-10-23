@@ -159,8 +159,8 @@ E:/Houdini/NimbusDemo/flipbook/demo12/
 
 ---
 
-This ensures every Houdini project you start follows a **consistent, scalable, and studio-friendly pipeline** —  
-ideal for both individual artists and collaborative production teams.
+This ensures every Houdini project you start follows a consistent, scalable, and studio-friendly pipeline —
+ideal for both individual artists and small production teams.
 
 
 
