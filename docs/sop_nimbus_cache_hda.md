@@ -25,49 +25,15 @@ This makes it ideal for maintaining version-safe, reproducible simulations in bo
 
 ## 3️⃣ UI Reference
 
-#### A) Naming & Paths
-Parameter	Description
-Name	Logical cache name used for folder and file naming.
-Cache Path	Full resolved output path (read-only). Derived automatically from the OBJ Nimbus environment variables (e.g. $CACHE).
-Cache Directory	Root directory for the cache files (usually $CACHE). You can browse or override this path if needed.
-Extension	Defines the file format for cached output. NimbusCache supports multiple export types, allowing flexibility for different workflows:
-
-.bgeo.sc — Standard Houdini geometry cache (fast & compressed). (Default option)
-
-.vdb — Sparse volumetric data (smoke, fire, or fog).
-
-.abc — Alembic format for DCC interchange (e.g. Maya, Blender).
-
-.usd — USD layer export (for Solaris or Unreal workflows).
-
-.hbjson — Houdini Bake JSON (for Niagara FX export in Unreal Engine).
-
-Example Path:
-E:/Houdini/NimbusDemo/cache/demo12/bgeo/nimbuscache/v003/nimbuscache_v003.$F4.bgeo.sc
-
-💡 Tip:
-Changing the extension automatically creates a corresponding subfolder (e.g. /bgeo/, /vdb/, /usd/) — keeping cache formats neatly organized and separated.
-
-B) bgeo Controls
-Parameter	Description
-Load from Disk	Reads cached geometry from disk instead of recooking the SOP network. Useful for quick reloads and reviews.
-Save to Disk	Starts caching in the foreground.
-Save to Disk in Background	Starts caching as a background process so you can continue working.
-Cancel Cook	Stops the active caching process.
-Evaluate As	Defines how to evaluate — typically Frame Range for sequence output.
-Start / End / Inc	Specifies frame range and step size for caching (Inc = step, default 1).
-Initialize Simulation OPs	Reinitializes DOPs or SOP solvers before caching to ensure a clean sim state.
-C) Checkpoints (Resume Long Simulations)
-Parameter	Description
-Enable Checkpoints	Enables checkpoint-based caching for DOP simulations. Periodically writes checkpoint files, allowing you to resume after a crash or interruption without restarting from frame 1.
-dopnet ref	Specifies the path to the DOP Network (e.g. ../dopnet1). This reference is required for checkpoint caching to function.
-Set Checkpoints	Sends a command to the linked DOP network to begin writing checkpoints while caching.
-Set Start Frame from Cache	Automatically reads the last cached or checkpointed frame and sets it as the new starting frame — making continuation seamless.
-
-💡 Tip:
-For long-running fluid, pyro, or destruction simulations — enable Checkpoints, assign your dopnet ref, and use Save to Disk or Save to Disk in Background.
-If caching stops midway, simply click Set Start Frame from Cache to continue from where it left off — no need to restart the simulation.
-
+| Parameter                      | Description                                                                                                 |
+| :----------------------------- | :---------------------------------------------------------------------------------------------------------- |
+| **Load from Disk**             | Reads cached geometry from disk instead of recooking the SOP network. Useful for quick reloads and reviews. |
+| **Save to Disk**               | Starts caching in the foreground.                                                                           |
+| **Save to Disk in Background** | Starts caching as a background process so you can continue working.                                         |
+| **Cancel Cook**                | Stops the active caching process.                                                                           |
+| **Evaluate As**                | Defines how to evaluate — typically **Frame Range** for sequence output.                                    |
+| **Start / End / Inc**          | Specifies frame range and step size for caching (Inc = step, default `1`).                                  |
+| **Initialize Simulation OPs**  | Reinitializes DOPs or SOP solvers before caching to ensure a clean sim state.                               |
 ---
 
 ### B) Versioning
