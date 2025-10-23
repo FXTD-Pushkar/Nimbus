@@ -50,20 +50,7 @@ Changing the extension automatically creates a corresponding subfolder (e.g. /bg
 
 
 ---
-
-B) bgeo Controls
-Parameter	Description
-Load from Disk	Reads cached geometry from disk instead of recooking the SOP network. Useful for quick reloads and reviews.
-Save to Disk	Starts caching in the foreground.
-Save to Disk in Background	Starts caching as a background process so you can continue working.
-Cancel Cook	Stops the active caching process.
-Evaluate As	Defines how to evaluate — typically Frame Range for sequence output.
-Start / End / Inc	Specifies frame range and step size for caching (Inc = step, default 1).
-Initialize Simulation OPs	Reinitializes DOPs or SOP solvers before caching to ensure a clean sim state.
-
----
-
-### C) Caching (bgeo)
+### B) Caching 
 | Control | What it does |
 |---|---|
 | **Load from Disk** | Switches the node to read existing files instead of cooking upstream. |
@@ -76,7 +63,15 @@ Initialize Simulation OPs	Reinitializes DOPs or SOP solvers before caching to en
 | **Enable Checkpoints** | Writes intermittent frames for long sims (resume options depend on your setup). |
 
 ---
+### C) Checkpoints (Resume Long Simulations)
+| Parameter                      | Description                                                                                                                                                                           |
+| :----------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **Enable Checkpoints**         | Enables checkpoint-based caching for DOP simulations. Periodically writes checkpoint files, allowing you to **resume** after a crash or interruption without restarting from frame 1. |
+| **dopnet ref**                 | Specifies the path to the DOP Network (e.g. `../dopnet1`). This reference is **required** for checkpoint caching to function.                                                         |
+| **Set Checkpoints**            | Sends a command to the linked DOP network to begin writing checkpoints while caching.                                                                                                 |
+| **Set Start Frame from Cache** | Automatically reads the last cached or checkpointed frame and sets it as the new starting frame — making continuation seamless.                                                       |
 
+---
 ### D) Out Node (Farm Hand-off)
 | Control | What it does |
 |---|---|
