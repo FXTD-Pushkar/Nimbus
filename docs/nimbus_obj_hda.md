@@ -50,7 +50,7 @@ It standardizes how HIP files are saved, ensuring consistent paths for assets, c
 
 
 ```html
-<pre><code>
+
 E:/Houdini/NimbusDemo/
 ├─ assets/
 ├─ cache/
@@ -65,7 +65,6 @@ E:/Houdini/NimbusDemo/
 │  └─ demo_03/
 ├─ render/
 └─ usd/
-</code></pre>
 
 
 
