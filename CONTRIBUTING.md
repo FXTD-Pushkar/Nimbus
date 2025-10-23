@@ -1,18 +1,30 @@
 # Contributing to Nimbus
 
-Thanks for your interest!
+Thanks for checking out **Nimbus** — a Houdini pipeline and caching framework by Pushkar Deshpandey.
 
-## Dev setup
-1. Clone the repo.
-2. Duplicate `houdini/packages/nimbus.json.example` → `nimbus.json` and point `path_root` to your local clone.
-3. Launch Houdini; you should see a **Nimbus** shelf.
+At this stage, the project is in its first public release.  
+Contributions are not required, but feedback, testing, and suggestions are always welcome.
 
-## Code style
-- Python: PEP8 (with pragmatic exceptions for Houdini)
-- HDA changes: bump version in `CHANGELOG.md` and include a small GIF/screenshot when possible.
-- Keep UI strings user‑friendly; long technical notes go in tooltips or docs.
+---
 
-## Submitting a PR
-- Describe the problem and solution clearly.
-- Add repro steps and test notes.
-- For HDA binary updates, include a small demo scene if feasible.
+## 💬 Feedback
+
+If you spot an issue or have an idea for improvement:
+- Open a **GitHub Issue** describing the problem or feature request.
+- Include screenshots or simple reproduction steps if possible.
+
+---
+
+## ⚙️ Local Setup (optional)
+
+If you'd like to explore the code:
+1. Clone the repo.  
+2. Duplicate `houdini/packages/nimbus.json.example` → `nimbus.json`  
+3. Edit `path_root` to point to your local Nimbus directory.  
+4. Launch Houdini — you should see a **Nimbus** shelf.
+
+---
+
+### 🚀 Note
+Nimbus is actively being improved.  
+Future updates will include contribution guidelines for HDA or pipeline integration.
