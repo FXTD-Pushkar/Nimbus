@@ -7,8 +7,11 @@
 
 ## 1️⃣ Purpose
 
-**Nimbus Cache** handles FX/geo caching at the SOP level with automatic paths, versions, and clean naming.  
-It writes common formats like **.bgeo.sc**, and can hand off to an **/out** ROP for farm runs.
+**Nimbus Cache** is a SOP-level HDA designed to handle simulation and geometry caching with automatic version control, environment variable paths, and clean file naming.
+
+Each time you trigger a cache, the tool automatically saves a backup copy of your current .hip file inside the same version directory — ensuring that every cache version is fully traceable to the exact Houdini setup used to generate it.
+
+This makes it ideal for maintaining version-safe, reproducible simulations in both individual and small-team production workflows.
 
 ---
 
