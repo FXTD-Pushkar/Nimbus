@@ -25,7 +25,7 @@ This makes it ideal for maintaining version-safe, reproducible simulations in bo
 
 ## 3️⃣ UI Reference
 
-A) Naming & Paths
+### A) Naming & Paths
 Parameter	Description
 Name	Logical cache name used for folder and file naming.
 Cache Path	Full resolved output path (read-only). Derived automatically from the OBJ Nimbus environment variables (e.g. $CACHE).
