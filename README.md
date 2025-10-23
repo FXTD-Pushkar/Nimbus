@@ -52,9 +52,9 @@ It includes three HDAs you can use separately or together:
 ## 🧩 Compatibility
 
 - **Houdini:** 20.0, 20.5, 21.x (tested)  
-- **OS:** Windows (tested), Linux/macOS (coming soon)  
+- **OS:** Windows (tested), Linux/macOS
 - **Farm:** HQueue, Deadline  
-- **Renderers:** Karma, Mantra, Arnold, Redshift  
+ 
 
 ---
 
