@@ -49,7 +49,7 @@ It standardizes how HIP files are saved, ensuring consistent paths for assets, c
 ### 🧱 Folder Structure Example
 
 
-'''
+'''html
 
 E:/Houdini/NimbusDemo/
 ├─ assets/
@@ -66,7 +66,7 @@ E:/Houdini/NimbusDemo/
 ├─ render/
 └─ usd/
 
-'''
+
 
 
 ---
