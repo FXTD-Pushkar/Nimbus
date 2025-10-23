@@ -46,7 +46,7 @@ It standardizes how HIP files are saved, ensuring consistent paths for assets, c
 
 ---
 
-### 🧱 Folder Structure Example
+### 🧱 #### Folder Structure Example
 
 
 ```
@@ -94,7 +94,7 @@ These variables dynamically adapt based on your **Project / Scene / Shot** setup
 | Variable | Description | Example Path |
 |-----------|--------------|--------------|
 | **$ASSET** | Points to the **Assets** directory where geometry, textures, or reference files are stored. | `E:/Houdini/NimbusDemo/assets` |
-| **$CACHE** | Points to the **Cache** directory where simulation data is saved (e.g., `.bgeo`, `.vdb`, `.abc`, `.usd`). Each scene creates its own subfolder for versioned caches. | `E:/Houdini/NimbusDemo/cache/demo12/bgeo/nimbuscache/v003/nimbuscache_v003.0031.bgeo.sc` |
+| **$CACHE** | Points to the **Cache** directory where simulation data is saved (e.g., `.bgeo`, `.vdb`, `.abc`). Each scene creates its own subfolder for versioned caches. | `E:/Houdini/NimbusDemo/cache/demo12/bgeo/nimbuscache/v003/nimbuscache_v003.0031.bgeo.sc` |
 | **$USD** | Points to the **USD** directory for storing exported USD layers and stages. | `E:/Houdini/NimbusDemo/usd` |
 | **$FLIPBOOK** | Points to the **Flipbook** directory for OpenGL previews and lookdev tests. | `E:/Houdini/NimbusDemo/flipbook` |
 | **$RENDER** | Points to the **Render** directory for final rendered image sequences or beauty passes. | `E:/Houdini/NimbusDemo/render` |
