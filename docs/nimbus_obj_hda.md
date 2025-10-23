@@ -15,32 +15,32 @@ All Nimbus tools — like **Nimbus Cache (SOP)** and **ROP NimbusCache (OUT)** �
 
 ## 🧭 Main Sections
 
-### 1️⃣ Project Details
-| Parameter | Description |
-|------------|-------------|
-| **Project / Scene / Shot** | Define your show structure. Example: `Project = Demo`, `Scene = SQ010`, `Shot = SH030`. |
-| **Enable Shot** | Enables shot-level folder creation. |
-| **Comment** | Optional short description or note. |
-| **Artist / Department** | Auto-filled or manually entered; used for tagging cache and render data. |
-| **Project Details (📄)** | Opens your project path in the system file explorer. |
+🧭 1️⃣ Project Details
+Parameter	Description
+Project / Scene / Shot	Defines your project structure. The Scene field doesn’t strictly mean “sequence” — it can represent anything like sequence, element, or FX category (e.g. fire, destruction, water_interaction). Example: Project = NimbusDemo, Scene = Fire, Shot = SH010.
+Enable Shot	Enables shot-level folder creation. When disabled, caching and review folders are generated only at the scene level (useful for standalone FX or lookdev).
+Comment	Optional text note for internal tracking or quick identification of tasks.
+Artist / Department	Automatically filled or editable fields used for tagging caches, flipbooks, and renders.
+Project Details (📄)	Opens the main project directory in your file browser to verify paths.
 
 ---
 
-### 2️⃣ File Controls
-| Control | Description |
-|----------|-------------|
-| **Empty hip_file** | Creates an empty `.hip` file under your current project folder. |
-| **Save / Version Up** | Saves the current scene in your project’s `HIP` directory with proper versioning. |
-| **Version Up (Minor)** | Increments only the minor version (e.g. `_v001` → `_v002`). Useful for quick test saves. |
+🧩 2️⃣ File Controls
+Control	Description
+Empty hip_file	Displays the currently active HIP file. If no file is saved yet, the dropdown shows an empty entry. Once a versioned file is saved, it appears in the ver_list dropdown for easy access.
+Save / Version Up	Saves the current .hip file in the project’s HIP directory and updates the version naming. Example: NimbusDemo_001_v001.hip where 001 = minor version and v001 = major version.
+Version Up (Minor)	Increments only the minor version part (001 → 002), keeping the major version (v001) the same. This is useful for internal updates or WIP saves between major publishes. Example: NimbusDemo_001_v001.hip → NimbusDemo_002_v001.hip.
 
 ---
 
-### 3️⃣ Directory Paths
-| Path | Description |
-|------|-------------|
-| **Assets / Cache / USD / Flipbook / Render** | Auto-generated paths based on the project structure. |
-| | Example: `$CACHE` → `D:/Projects/Demo/SQ010/SH030/cache/` |
-| | Folder icons open the location in your OS file browser. |
+📂 3️⃣ Directory Paths
+Path	Description
+Assets / Cache / USD / Flipbook / Render	Auto-generated environment paths based on the project name and scene setup. Each path follows your base directory structure and can be accessed using Houdini’s environment variables.
+Example Syntax:	E:/Houdini/NimbusDemo/cache
+• E:/Houdini → Base directory where all projects are stored
+• NimbusDemo → Current project name (can be any project)
+• cache → Cache folder where .bgeo, .vdb, .abc, or .usd files are saved
+Folder Icon	Opens the corresponding folder directly in your file browser for quick navigation.
 
 ---
 
