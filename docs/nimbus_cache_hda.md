@@ -88,3 +88,43 @@ It writes common formats like **.bgeo.sc**, and can hand off to an **/out** ROP 
 ## 4️⃣ Output Examples
 
 - Sequence:  
+
+$CACHE/demo12/bgeo/nimbuscache/v003/nimbuscache_v003.$F4.bgeo.sc
+
+Expands to:  
+
+E:/Houdini/NimbusDemo/cache/demo12/bgeo/nimbuscache/v003/nimbuscache_v003.0031.bgeo.sc
+
+
+- Switching to **Load from Disk** will read:  
+
+.../v003/nimbuscache_v003.$F4.bgeo.sc
+
+
+---
+
+## 5️⃣ Best Practices
+
+- Set **Project/Scene/Shot** on the **OBJ Nimbus** first — all paths resolve from there.  
+- Keep **Auto Versioning** on; don’t overwrite previous caches.  
+- Use **Background Save** for heavy sims while you continue look-dev.  
+- Create the **/out** ROP when you’re ready to submit to farm (HQueue/Deadline).  
+- Use **Load from Disk** after a successful cache to lock work and speed up the scene.
+
+---
+
+## 6️⃣ Troubleshooting
+
+- **Path shows blank or wrong drive** → Check OBJ Nimbus and `$CACHE` variable.  
+- **No files after save** → Confirm the frame range and that you’re not on **Load from Disk**.  
+- **Farm cannot find files** → Ensure the cache directory is on a shared/network path visible to HQueue/Deadline workers.
+
+---
+
+**Next:** configure chained jobs and review hooks in the **ROP NimbusCache (OUT)** guide.
+
+
+
+
+
+
