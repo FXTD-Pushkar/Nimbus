@@ -32,18 +32,18 @@ Cache Path	Full resolved output path (read-only). Derived automatically from the
 Cache Directory	Root directory for the cache files (usually $CACHE). You can browse or override this path if needed.
 Extension	Defines the file format for cached output. NimbusCache supports multiple export types, allowing flexibility for different workflows:
 
-.bgeo.sc — Standard Houdini geometry cache (fast & compressed). (Default option)
+*.bgeo.sc* — Standard Houdini geometry cache (fast & compressed). (Default option)
 
-.vdb — Sparse volumetric data (smoke, fire, or fog).
+*.vdb* — Sparse volumetric data (smoke, fire, or fog).
 
-.abc — Alembic format for DCC interchange (e.g. Maya, Blender).
+*.abc* — Alembic format for DCC interchange (e.g. Maya, Blender).
 
-.usd — USD layer export (for Solaris or Unreal workflows).
+*.usd* — USD layer export (for Solaris or Unreal workflows).
 
-.hbjson — Houdini Bake JSON (for Niagara FX export in Unreal Engine).
+*.hbjson* — Houdini Bake JSON (for Niagara FX export in Unreal Engine).
 
-Example Path:
-E:/Houdini/NimbusDemo/cache/demo12/bgeo/nimbuscache/v003/nimbuscache_v003.$F4.bgeo.sc
+> Example Path:
+> E:/Houdini/NimbusDemo/cache/demo12/bgeo/nimbuscache/v003/nimbuscache_v003.$F4.bgeo.sc
 
 💡 Tip:
 Changing the extension automatically creates a corresponding subfolder (e.g. /bgeo/, /vdb/, /usd/) — keeping cache formats neatly organized and separated.
