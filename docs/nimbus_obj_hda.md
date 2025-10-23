@@ -134,8 +134,17 @@ Each flipbook render and MP4 file follows the project naming convention and is s
 All flipbook versions are stored under `$FLIPBOOK/<scene_name>/<version>/`, ensuring clean version control and easy playback access.
 
 Example structure:
-
-
+```
+E:/Houdini/NimbusDemo/flipbook/demo12/
+├─ v023/
+│ ├─ NimbusDemo_demo12_pushkar_fx_001_v023.$F4.jpg
+│ ├─ MP4/
+│ │ └─ NimbusDemo_demo12_pushkar_fx_001_v023.mp4
+├─ v024/
+│ ├─ NimbusDemo_demo12_pushkar_fx_001_v024.$F4.jpg
+│ └─ MP4/
+│ └─ NimbusDemo_demo12_pushkar_fx_001_v024.mp4
+```
 
 ### ✅ Summary
 
