@@ -86,17 +86,28 @@ E:/Houdini/NimbusDemo/
 ---
 
 
-🌐 Environment Variables
+### 🌐 Environment Variables
 
-When a project is created using the Nimbus Object HDA, the following Houdini environment variables are automatically set.
-These variables dynamically adapt based on your Project / Scene / Shot setup, and are available globally across your scene.
+When a project is created using the **Nimbus Object HDA**, the following Houdini environment variables are automatically set.  
+These variables dynamically adapt based on your **Project / Scene / Shot** setup and are available globally across your scene.
 
-Variable	Description	Example Path
-$ASSET	Points to the Assets directory where geometry, textures, or reference files are stored.	E:/Houdini/NimbusDemo/assets
-$CACHE	Points to the Cache directory where simulation data is saved (e.g., .bgeo, .vdb, .abc, .usd). Each scene creates its own subfolder for versioned caches.	E:/Houdini/NimbusDemo/cache/demo12/bgeo/nimbuscache/v003/nimbuscache_v003.0031.bgeo.sc
-$USD	Points to the USD directory for storing exported USD layers and stages.	E:/Houdini/NimbusDemo/usd
-$FLIPBOOK	Points to the Flipbook directory for OpenGL previews and lookdev tests.	E:/Houdini/NimbusDemo/flipbook
-$RENDER	Points to the Render directory for final rendered image sequences or beauty passes.	E:/Houdini/NimbusDemo/render
+| Variable | Description | Example Path |
+|-----------|--------------|--------------|
+| **$ASSET** | Points to the **Assets** directory where geometry, textures, or reference files are stored. | `E:/Houdini/NimbusDemo/assets` |
+| **$CACHE** | Points to the **Cache** directory where simulation data is saved (e.g., `.bgeo`, `.vdb`, `.abc`, `.usd`). Each scene creates its own subfolder for versioned caches. | `E:/Houdini/NimbusDemo/cache/demo12/bgeo/nimbuscache/v003/nimbuscache_v003.0031.bgeo.sc` |
+| **$USD** | Points to the **USD** directory for storing exported USD layers and stages. | `E:/Houdini/NimbusDemo/usd` |
+| **$FLIPBOOK** | Points to the **Flipbook** directory for OpenGL previews and lookdev tests. | `E:/Houdini/NimbusDemo/flipbook` |
+| **$RENDER** | Points to the **Render** directory for final rendered image sequences or beauty passes. | `E:/Houdini/NimbusDemo/render` |
+
+---
+
+💡 **Example Usage:**
+
+In any Houdini node (File Cache, Geometry ROP, etc.), you can use:
+```bash
+
+$CACHE/demo12/bgeo/nimbuscache/v003/nimbuscache_v003.$F4.bgeo.sc
+
 
 
 
