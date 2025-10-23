@@ -61,20 +61,21 @@ It includes three HDAs you can use separately or together:
 ## 📁 Folder Layout
 
 Documents/
-└─ houdiniXX.X/        ← your Houdini version (e.g. houdini21.0)
-   ├─ otls/
-   │  ├─ object_Nimbus.1.0.hdalc
-   │  ├─ sop_nimbus_cache.1.0.hdalc
-   │  └─ driver_ROP_NimbusCache.1.0.hdalc
-   └─ scripts/
-      └─ python/
-         └─ nimbus/
-            ├─ versioning.py
-            ├─ hooks.py
-            ├─ hqueue_deadline.py
-            ├─ utils.py
-            └─ email_notify.py
+└─ houdiniXX.X/ ← your Houdini version (e.g. houdini21.0)
+├─ otls/
+│ ├─ object_Nimbus.1.0.hdalc
+│ ├─ sop_nimbus_cache.1.0.hdalc
+│ └─ driver_ROP_NimbusCache.1.0.hdalc
+└─ scripts/
+└─ python/
+└─ nimbus/
+├─ versioning.py
+├─ hooks.py
+├─ hqueue_deadline.py
+├─ utils.py
+└─ email_notify.py
 
+Example paths:
 Documents/houdini21.0/otls
 Documents/houdini21.0/scripts/python/nimbus
 
