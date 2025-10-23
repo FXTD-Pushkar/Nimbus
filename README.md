@@ -37,7 +37,7 @@ It includes three HDAs you can use separately or together:
 - Export multiple formats: `.bgeo.sc`, `.vdb`, `.abc`, `.usd`, Niagara/VAT  
 - Farm submission (HQueue + Deadline)  
 - Post-cache hooks: save `.hip`, email notify, flipbook to `/review`  
-- Works with any renderer (Karma, Arnold, Mantra, Redshift)
+
 
 ---
 
