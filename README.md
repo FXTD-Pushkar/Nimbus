@@ -56,11 +56,10 @@ ffmpeg -y -framerate <fps> -start_number <firstFrame> -i <sequence> \
   -vf scale=<evenW>:<evenH>:flags=lanczos,format=yuv420p \
   -c:v libx264 -preset medium -crf 18 <output>.mp4
 ```
-I ensure even dimensions and yuv420p for broad player compatibility.␣␣
+I ensure even dimensions and yuv420p for broad player compatibility.<br>
 Encoder is libx264 (H.264). Any recent FFmpeg with x264 works.
 
-
-How Nimbus finds FFmpeg
+####How Nimbus finds FFmpeg
   If environment variable FFMPEG is set, Nimbus uses that path (recommended):
 ```
 # houdini.env
