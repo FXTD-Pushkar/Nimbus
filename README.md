@@ -58,7 +58,7 @@ ffmpeg -y -framerate <fps> -start_number <firstFrame> -i <sequence> \
   -vf scale=<evenW>:<evenH>:flags=lanczos,format=yuv420p \
   -c:v libx264 -preset medium -crf 18 <output>.mp4
 ```
-I ensure even dimensions and yuv420p for broad player compatibility.
+I ensure even dimensions and yuv420p for broad player compatibility.<br>
 Encoder is libx264 (H.264), the industry-standard open-source codec used for most MP4 videos,
 ensuring fast encoding and universal playback.
 ```
