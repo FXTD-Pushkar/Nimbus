@@ -21,7 +21,7 @@ It includes three HDAs you can use separately or together:
 
 ---
 
-🧭 Nimbus Menu Integration
+## 🧭 Nimbus Menu Integration
 
 After installation, a new Nimbus menu appears in Houdini’s top bar.
 It provides quick access to commonly used tools:
@@ -30,7 +30,7 @@ Hip Open – Quickly open project or shot .hip files.
 
 Save Version / Save Minor Version – Auto-version your current Houdini scene.
 
-Nimbus Cache Manager – Browse, refresh, and manage cache versions visually.
+Nimbus Cache Manager – Browse, refresh, approve, or delete cache versions visually.
 
 VEX Snippet Manager – Access your saved VEX presets and snippets.
 
