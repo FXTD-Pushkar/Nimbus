@@ -62,7 +62,8 @@ I ensure even dimensions and yuv420p for broad player compatibility.<br>
 Encoder is libx264 (H.264). Any recent FFmpeg with x264 works.
 ```
 I ensure even dimensions and yuv420p for broad player compatibility.
-Encoder is libx264 (H.264), the industry-standard open-source codec used for most MP4 videos, ensuring fast encoding and universal playback.
+Encoder is libx264 (H.264), the industry-standard open-source codec used for most MP4 videos,
+ensuring fast encoding and universal playback.
 ```
 
 **How Nimbus finds FFmpeg** → 
