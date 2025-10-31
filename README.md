@@ -49,7 +49,7 @@ It includes three HDAs you can use separately or together:
 3. **Use ROP NimbusCache (OUT)** → Combine multiple caches, manage versions, and **Submit to Farm**.
 4. 🎬 FFmpeg Setup & Troubleshooting
    Nimbus uses **FFmpeg** to automatically convert flipbook image sequences into `.mp4` videos.
-   FFMPEG = "C:/path/to/ffmpeg.exe"
+   >> FFMPEG = "C:/path/to/ffmpeg.exe"
 
    - The build must include **libx264** for MP4/H.264 encoding.
 
