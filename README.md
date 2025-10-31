@@ -61,7 +61,8 @@ ffmpeg -y -framerate <fps> -start_number <firstFrame> -i <sequence> \
 I ensure even dimensions and yuv420p for broad player compatibility.<br>
 Encoder is libx264 (H.264). Any recent FFmpeg with x264 works.
 ```
-I use yuv420p to ensure broad playback compatibility across media players and platforms — it’s the standard pixel format for H.264 videos and avoids color or decoding issues in QuickTime, browsers, and review tools.
+I use yuv420p to ensure broad playback compatibility across media players and platforms — 
+it’s the standard pixel format for H.264 videos and avoids color or decoding issues in QuickTime, browsers, and review tools.
 ```
 
 **How Nimbus finds FFmpeg** → 
