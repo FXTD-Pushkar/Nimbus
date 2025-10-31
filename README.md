@@ -21,6 +21,26 @@ It includes three HDAs you can use separately or together:
 
 ---
 
+🧭 Nimbus Menu Integration
+
+After installation, a new Nimbus menu appears in Houdini’s top bar.
+It provides quick access to commonly used tools:
+
+Hip Open – Quickly open project or shot .hip files.
+
+Save Version / Save Minor Version – Auto-version your current Houdini scene.
+
+Nimbus Cache Manager – Browse, refresh, and manage cache versions visually.
+
+VEX Snippet Manager – Access your saved VEX presets and snippets.
+
+Render Flipbook (Sequence + MP4) – Launch the Flipbook UI to render image sequences and MP4s using FFmpeg.
+
+🪄 Nimbus automatically installs this menu when the Python scripts are copied to your Houdini scripts/python/nimbus folder.
+To enable the menu, copy or replace the provided MainMenuCommon.xml file into your Houdini version directory inside Documents (for example: Documents/houdini20.5, Documents/houdini21.0, etc.).
+
+---
+
 ## 📦 HDAs Included
 
 | File | Context | Description |
