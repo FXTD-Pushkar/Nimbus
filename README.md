@@ -36,7 +36,7 @@ VEX Snippet Manager – Access your saved VEX presets and snippets.
 
 Render Flipbook (Sequence + MP4) – Launch the Flipbook UI to render image sequences and MP4s using FFmpeg.
 
-🪄 Nimbus automatically installs this menu when the Python scripts are copied to your Houdini scripts/python folder.
+🪄 Nimbus automatically installs this menu when the Python scripts are copied to your Houdini *scripts/python* folder.
 To enable the menu, copy or replace the provided MainMenuCommon.xml file into your Houdini version directory inside Documents (for example: Documents/houdini20.5, Documents/houdini21.0, etc.).
 
 ---
