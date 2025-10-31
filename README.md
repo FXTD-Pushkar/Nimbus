@@ -48,7 +48,9 @@ It includes three HDAs you can use separately or together:
 2. **Use Nimbus Cache (SOP)** → Choose export format and click **Save to Disk**   
 3. **Use ROP NimbusCache (OUT)** → Combine multiple caches, manage versions, and **Submit to Farm**.
 4. **Flipbook** → Use the flipbook UI. Nimbus saves an image sequence and, if FFmpeg is available, makes an .mp4.
-🎬 FFmpeg for MP4 export
+
+#### 🎞️ FFmpeg Integration
+
 
 Nimbus calls FFmpeg like this:
 ```
@@ -65,7 +67,8 @@ Encoder is libx264 (H.264). Any recent FFmpeg with x264 works.
 # houdini.env
 FFMPEG="C:/ffmpeg/bin/ffmpeg.exe"
 ```
-Otherwise Nimbus tries the command ffmpeg on your system PATH.
+*Otherwise Nimbus tries the command `ffmpeg` on your system PATH.*
+
 
 ---
 
