@@ -47,25 +47,19 @@ It includes three HDAs you can use separately or together:
 1. **Add Nimbus (OBJ)** → Set your project, sequence, and shot folders.  
 2. **Use Nimbus Cache (SOP)** → Choose export format and click **Save to Disk**   
 3. **Use ROP NimbusCache (OUT)** → Combine multiple caches, manage versions, and **Submit to Farm**.
-4. 🎬 FFmpeg Setup & Troubleshooting
-   Nimbus uses **FFmpeg** to automatically convert flipbook image sequences into `.mp4` videos.
-   #### ✅ Requirements
-   - FFmpeg must be installed and accessible from the system `PATH`, or defined via:
-  
-   >> FFMPEG = "C:/path/to/ffmpeg.exe"
+4. **Flipbook** → Use the flipbook UI. Nimbus saves an image sequence and, if FFmpeg is available, makes an .mp4.
+🎬 FFmpeg for MP4 export
 
-   - The build must include **libx264** for MP4/H.264 encoding.
-
-#### 🧩 How to Verify
-```bash
-ffmpeg -version
-ffmpeg -encoders | grep x264      # (Linux/macOS)
-ffmpeg -encoders | findstr x264   # (Windows)
-
-
-
-
+Nimbus calls FFmpeg like this:
 ```
+ffmpeg -y -framerate <fps> -start_number <firstFrame> -i <sequence> \
+  -vf scale=<evenW>:<evenH>:flags=lanczos,format=yuv420p \
+  -c:v libx264 -preset medium -crf 18 <output>.mp4
+```
+>I ensure even dimensions and yuv420p for broad player compatibility.
+>Encoder is libx264 (H.264). Any recent FFmpeg with x264 works.
+
+
 ---
 
 ## 🧩 Compatibility
