@@ -91,6 +91,24 @@ FFMPEG="C:/ffmpeg/bin/ffmpeg.exe"
 ```
 *Otherwise Nimbus tries the command `ffmpeg` on your system PATH.*
 
+---
+
+## ⚙️ Nimbus Houdini Batch Render
+
+Nimbus includes a standalone Houdini Batch Render Tool that can be launched via a provided .bat file.
+It’s designed for running cache or render tasks without opening Houdini’s full UI — ideal for background processing or automated jobs.
+
+Supports .hip file loading per project and scene.
+
+Lists available ROP or SOP Nimbus Cache nodes for selection.
+
+Allows multi-stage cache and render execution in sequence.
+
+Automatically performs versioning for each cache output.
+
+Includes husk mode for USD ROPs (if USD paths are detected).
+
+🪄 This tool streamlines repetitive batch processing, helping artists queue and version multiple caches or renders efficiently.
 
 ---
 
