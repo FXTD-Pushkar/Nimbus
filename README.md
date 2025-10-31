@@ -6,8 +6,9 @@ It includes three HDAs you can use separately or together:
 
 - **Nimbus (OBJ level)** – Project and shot manager  
 - **Nimbus Cache (SOP level)** – Exports caches like `.bgeo.sc`, `.vdb`, `.abc`, `.usd`, or Niagara.
-- **ROP NimbusCache (OUT level)** – Handles multi-stage cache dependencies (e.g., sim → mesh → export), manages auto-versioning, and connects with Nimbus Cache (SOP level) for easy tracking and cache flow visualization.
+- **ROP NimbusCache (OUT level)** – Handles multi-stage cache dependencies (e.g., sim → mesh → export), manages auto-versioning, connects with Nimbus Cache (SOP level) for easy tracking, and supports farm submission (HQueue or Deadline).
 
+  
 ---
 
 ## 🧭 Installation
