@@ -112,15 +112,10 @@ $CACHE/demo12/bgeo/nimbuscache/v003/nimbuscache_v003.$F4.bgeo.sc
 
 ### 🎬 7️⃣ Flipbook Controls
 
-The **Flipbook** section in Nimbus provides a streamlined way to generate OpenGL previews and automatically organize them into versioned folders.  
 Each flipbook render and MP4 file follows the project naming convention and is saved under the `$FLIPBOOK` directory.
 
 | Control | Description |
 |----------|--------------|
-| **Start / End / Inc** | Defines the frame range to render for the flipbook. You can enter a custom range or use the **Render Frame Range** button to auto-fill from the scene settings. |
-| **Camera** | Specifies which camera will be used for the flipbook render. Automatically detects all cameras in `/obj`. |
-| **Override Camera Resolution** | Enables manual resolution control instead of using the camera’s resolution settings. |
-| **Resolution** | Defines the output resolution (e.g., 1280 × 720). Can be quickly changed using preset buttons or typed manually. |
 | **Flipbook Path** | Displays the output path for the image sequence. Automatically versioned based on the current project, scene, and user. <br>Example: `E:/Houdini/NimbusDemo/flipbook/demo12/v023/NimbusDemo_demo12_pushkar_fx_001_v023.$F4.jpg` |
 | **MP4 Path** | Shows the path for the generated MP4 file, automatically created from the image sequence after the flipbook completes. <br>Example: `E:/Houdini/NimbusDemo/flipbook/demo12/v023/MP4/NimbusDemo_demo12_pushkar_fx_001_v023.mp4` |
 | **Cook Flipbook** | Starts the flipbook render process using the specified frame range, camera, and resolution. |
