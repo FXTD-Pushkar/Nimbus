@@ -70,7 +70,7 @@ To enable the menu, copy or replace the provided MainMenuCommon.xml file into yo
 3. **Use ROP NimbusCache (OUT)** → Combine multiple caches, manage versions, and **Submit to Farm**.
 4. **Flipbook** → Use the flipbook UI. Nimbus saves an image sequence and, if FFmpeg is available, makes an .mp4.
 
-#### 🎞️ FFmpeg Integration
+## 🎞️ FFmpeg Integration
 
 
 Nimbus can automatically generate an .mp4 preview from the rendered flipbook image sequence.
@@ -81,7 +81,7 @@ C:\Program Files\ffmpeg\bin
 ```
 Nimbus will automatically detect ffmpeg.exe and generate MP4 previews during flipbook creation.
 
-## Verify Installation
+#### Verify Installation
 
 Open a new Command Prompt and run:
 ```
