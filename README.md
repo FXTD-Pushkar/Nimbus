@@ -73,23 +73,21 @@ To enable the menu, copy or replace the provided MainMenuCommon.xml file into yo
 #### 🎞️ FFmpeg Integration
 
 
-Nimbus calls FFmpeg like this:
-```
-ffmpeg -y -framerate <fps> -start_number <firstFrame> -i <sequence> \
-  -vf scale=<evenW>:<evenH>:flags=lanczos,format=yuv420p \
-  -c:v libx264 -preset medium -crf 18 <output>.mp4
-```
-I ensure even dimensions and yuv420p for broad player compatibility.<br>
-Encoder is libx264 (H.264), the industry-standard open-source codec used for most MP4 videos,<br>
-ensuring fast encoding and universal playback.
+Nimbus can automatically generate an .mp4 preview from the rendered flipbook image sequence.
 
-**How Nimbus finds FFmpeg** → 
-  If environment variable FFMPEG is set, Nimbus uses that path (recommended):
+To enable MP4 generation, make sure ffmpeg.exe is available in your system PATH.
 ```
-# houdini.env
-FFMPEG="C:/ffmpeg/bin/ffmpeg.exe"
+C:\Program Files\ffmpeg\bin
 ```
-*Otherwise Nimbus tries the command `ffmpeg` on your system PATH.*
+Nimbus will automatically detect ffmpeg.exe and generate MP4 previews during flipbook creation.
+
+## Verify Installation
+
+Open a new Command Prompt and run:
+```
+ffmpeg -version
+```
+If FFmpeg is installed correctly, version information should appear.
 
 ---
 
