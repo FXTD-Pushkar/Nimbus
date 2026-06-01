@@ -388,7 +388,6 @@ print("Nimbus OK")
 
 | Component | Supported |
 |-----------|-----------|
-| Houdini 20.0 | ✅ |
 | Houdini 20.5 | ✅ |
 | Houdini 21.0 | ✅ |
 | Windows | ✅ |
