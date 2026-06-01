@@ -109,18 +109,18 @@ Houdini loads packages from:
 
 | Houdini | Typical location (Windows) |
 |---------|----------------------------|
-| **21.0** | `C:\Users\<USERNAME>\Documents\houdini21.0\packages\nimbus.json` |
-| **20.5** | `C:\Users\<USERNAME>\Documents\houdini20.5\packages\nimbus.json` |
+| **21.0** | `C:\Users\<USERNAME>\Documents\houdini21.0\packages\nimbus_h20.5.json` |
+| **20.5** | `C:\Users\<USERNAME>\Documents\houdini20.5\packages\nimbus_h21.0.json` |
 
 Paths vary by user, for example:
 
-- `C:\Users\artist01\Documents\houdini21.0\packages\nimbus.json`
-- `C:\Users\artist01\OneDrive\Documents\houdini21.0\packages\nimbus.json`
+- `C:\Users\artist01\Documents\houdini21.0\packages\nimbus_h20.5.json`
+- `C:\Users\artist01\OneDrive\Documents\houdini21.0\packages\nimbus_h21.0.json`
 
 On **Linux / macOS**, use the matching folder under your home directory, for example:
 
-- `~/houdini21.0/packages/nimbus.json`
-- `~/Library/Preferences/houdini/21.0/packages/nimbus.json` (macOS — layout may vary by build)
+- `~/houdini21.0/packages/nimbus_h21.0.json`
+- `~/Library/Preferences/houdini/21.0/packages/nimbus_h21.0.json` (macOS — layout may vary by build)
 
 Create the **`packages`** folder if it does not exist.
 
@@ -132,12 +132,12 @@ Set **`NIMBUS_ROOT`** to the full path of the **version subfolder** (`H20_5` or 
 
 #### Houdini 20.5
 
-**File:** `Documents/houdini20.5/packages/nimbus.json`
+**File:** `Documents/houdini20.5/packages/nimbus_h20.5.json`
 
 ```json
 {
     "env": [
-        { "NIMBUS_ROOT": "D:/Pipeline/Nimbus/H20_5" },
+        { "NIMBUS_ROOT": "D:/Nimbus/H20_5" },
         { "PYTHONPATH": "$NIMBUS_ROOT/scripts/python;&" },
         { "HOUDINI_OTLSCAN_PATH": "$NIMBUS_ROOT/otls;&" },
         { "HOUDINI_MENU_PATH": "$NIMBUS_ROOT/menus;&" }
@@ -147,12 +147,12 @@ Set **`NIMBUS_ROOT`** to the full path of the **version subfolder** (`H20_5` or 
 
 #### Houdini 21.0
 
-**File:** `Documents/houdini21.0/packages/nimbus.json`
+**File:** `Documents/houdini21.0/packages/nimbus_h21.0.json`
 
 ```json
 {
     "env": [
-        { "NIMBUS_ROOT": "D:/Pipeline/Nimbus/H21_0" },
+        { "NIMBUS_ROOT": "D:/Nimbus/H21_0" },
         { "PYTHONPATH": "$NIMBUS_ROOT/scripts/python;&" },
         { "HOUDINI_OTLSCAN_PATH": "$NIMBUS_ROOT/otls;&" },
         { "HOUDINI_MENU_PATH": "$NIMBUS_ROOT/menus;&" }
@@ -199,10 +199,10 @@ The project root can be **any path you choose** when creating the project (local
 
 ### Example layout
 
-If your project is saved at `D:/Houdini/PipelineTest`, Nimbus configures:
+If your project is saved at `D:/Houdini/NimbusDemo`, Nimbus configures:
 
 ```
-D:/Houdini/PipelineTest/          ← $JOB   (project root)
+D:/Houdini/NimbusDemo/          ← $JOB   (project root)
 ├── assets/                       ← $ASSET
 ├── cache/                        ← $CACHE
 ├── flipbook/                     ← $FLIPBOOK
@@ -230,14 +230,14 @@ D:/Houdini/PipelineTest/          ← $JOB   (project root)
 
 | Variable | Example value |
 |----------|----------------|
-| `JOB` | `D:/Houdini/PipelineTest` |
-| `ASSET` | `D:/Houdini/PipelineTest/assets` |
-| `CACHE` | `D:/Houdini/PipelineTest/cache` |
-| `FLIPBOOK` | `D:/Houdini/PipelineTest/flipbook` |
-| `HIP` | `D:/Houdini/PipelineTest/hip` |
-| `RENDER` | `D:/Houdini/PipelineTest/render` |
-| `USD` | `D:/Houdini/PipelineTest/usd` |
-| `HIPFILE` | `D:/Houdini/PipelineTest/hip/shot01/untitled.hiplc` |
+| `JOB` | `D:/Houdini/NimbusDemo` |
+| `ASSET` | `D:/Houdini/NimbusDemo/assets` |
+| `CACHE` | `D:/Houdini/NimbusDemo/cache` |
+| `FLIPBOOK` | `D:/Houdini/NimbusDemo/flipbook` |
+| `HIP` | `D:/Houdini/NimbusDemo/hip` |
+| `RENDER` | `D:/Houdini/NimbusDemo/render` |
+| `USD` | `D:/Houdini/NimbusDemo/usd` |
+| `HIPFILE` | `D:/Houdini/NimbusDemo/hip/shot01/untitled.hiplc` |
 
 These variables are used across Nimbus tools (cache paths, flipbook output, farm submission, open-folder buttons, etc.).
 
