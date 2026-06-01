@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mainMenu>
+  <menuBar>
+
+    <subMenu id="Nimbus_menu">
+      <label>Nimbus</label>
+      <insertAfter>help_menu</insertAfter>
+
+      <separatorItem/>
+
+      <scriptItem id="nimbus_hip_open">
+        <label>Hip Open</label>
+        <scriptCode><![CDATA[
+import sys, importlib, hou, traceback
+try:
+    MOD_NAME = "nimbus.nimbus_hip_open"
+    sys.modules.pop(MOD_NAME, None)
+    mod = importlib.import_module(MOD_NAME)
+
+    for fn in ("_show_dialog", "show_dialog", "main"):
+        if hasattr(mod, fn):
+            getattr(mod, fn)()
+            break
+    else:
+        hou.ui.displayMessage("Nimbus Hip Open loaded, but no entry function found.")
+except Exception:
+    hou.ui.displayMessage("Nimbus Hip Open launch error:\n" + traceback.format_exc())
+        ]]></scriptCode>
+      </scriptItem>
+
+      <scriptItem id="save_version">
+        <label>Save Version</label>
+        <scriptCode><![CDATA[
+import sys, importlib, hou, traceback
+try:
+    MOD_NAME = "nimbus.save_new_version"
+    sys.modules.pop(MOD_NAME, None)
+    mod = importlib.import_module(MOD_NAME)
+
+    for fn in ("save_new_version", "main"):
+        if hasattr(mod, fn):
+            getattr(mod, fn)()
+            break
+    else:
+        hou.ui.displayMessage("Save Version loaded, but no entry function found.")
+except Exception:
+    hou.ui.displayMessage("Save Version error:\n" + traceback.format_exc())
+        ]]></scriptCode>
+      </scriptItem>
+
+      <scriptItem id="save_minor_version">
+        <label>Save Minor Version</label>
+        <scriptCode><![CDATA[
+import sys, importlib, hou, traceback
+try:
+    MOD_NAME = "nimbus.save_minor_version"
+    sys.modules.pop(MOD_NAME, None)
+    mod = importlib.import_module(MOD_NAME)
+
+    for fn in ("save_minor_version", "main"):
+        if hasattr(mod, fn):
+            getattr(mod, fn)()
+            break
+    else:
+        hou.ui.displayMessage("Save Minor Version loaded, but no entry function found.")
+except Exception:
+    hou.ui.displayMessage("Save Minor Version error:\n" + traceback.format_exc())
+        ]]></scriptCode>
+      </scriptItem>
+
+      <separatorItem/>
+
+      <scriptItem id="nimbus_cache_manager">
+        <label>Nimbus Cache Manager</label>
+        <scriptCode><![CDATA[
+import sys, importlib, hou, traceback
+try:
+    MOD_NAME = "nimbus.nimbus_cache_manager"
+    sys.modules.pop(MOD_NAME, None)
+    mod = importlib.import_module(MOD_NAME)
+
+    for fn in ("open_cache_manager", "show_dialog", "_show_dialog", "main"):
+        if hasattr(mod, fn):
+            getattr(mod, fn)()
+            break
+    else:
+        hou.ui.displayMessage("Nimbus Cache Manager loaded, but no entry function found.")
+except Exception:
+    hou.ui.displayMessage("Nimbus Cache Manager launch error:\n" + traceback.format_exc())
+        ]]></scriptCode>
+      </scriptItem>
+
+      <separatorItem/>
+
+      <scriptItem id="vex_snippet_manager">
+        <label>VEX Snippet Manager</label>
+        <scriptCode><![CDATA[
+import sys, importlib, hou, traceback
+try:
+    MOD_NAME = "nimbus.vex_snippet_manager"
+    sys.modules.pop(MOD_NAME, None)
+    mod = importlib.import_module(MOD_NAME)
+
+    for fn in ("show_vex_snippet_tool", "main"):
+        if hasattr(mod, fn):
+            getattr(mod, fn)()
+            break
+    else:
+        hou.ui.displayMessage("VEX Snippet Manager loaded, but no entry function found.")
+except Exception:
+    hou.ui.displayMessage("VEX Snippet Manager launch error:\n" + traceback.format_exc())
+        ]]></scriptCode>
+      </scriptItem>
+
+      <separatorItem/>
+
+      <scriptItem id="nimbus_make_flipbook">
+        <label>Render Flipbook (Sequence + MP4)</label>
+        <scriptCode><![CDATA[
+import sys, importlib, hou, traceback
+try:
+    MOD_NAME = "nimbus.nimbus_flipbook_ui"
+    sys.modules.pop(MOD_NAME, None)
+    mod = importlib.import_module(MOD_NAME)
+
+    for fn in ("run_nimbus_flipbook_with_ui", "show_flipbook_ui", "main"):
+        if hasattr(mod, fn):
+            getattr(mod, fn)()
+            break
+    else:
+        hou.ui.displayMessage("Nimbus Flipbook UI loaded, but no entry function found.")
+except Exception:
+    hou.ui.displayMessage("Flipbook launch error:\n" + traceback.format_exc())
+        ]]></scriptCode>
+      </scriptItem>
+
+    </subMenu>
+
+  </menuBar>
+</mainMenu>
