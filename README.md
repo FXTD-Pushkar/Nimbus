@@ -188,19 +188,82 @@ Nimbus adds a dedicated menu inside Houdini.
 
 ---
 
-## 💡 Basic Workflow
+## 📁 Project Directory & Environment Variables
 
-### 1. Create a project
+When you **select a project** from the Nimbus node (and set your scene / shot), Nimbus automatically:
 
-Create a **Nimbus** node in OBJ context.
+1. Creates a standard folder layout under the project root  
+2. Sets Houdini **global variables** (visible in **Edit → Aliases and Variables → Variables**)
 
-Configure **Project**, **Sequence**, and **Shot**. Nimbus builds the folder structure and sets environment variables automatically.
+The project root can be **any path you choose** when creating the project (local drive, server, etc.). Nimbus does not require a fixed drive or folder name.
 
-Project registry:
+### Example layout
+
+If your project is saved at `D:/Houdini/PipelineTest`, Nimbus configures:
+
+```
+D:/Houdini/PipelineTest/          ← $JOB   (project root)
+├── assets/                       ← $ASSET
+├── cache/                        ← $CACHE
+├── flipbook/                     ← $FLIPBOOK
+├── hip/                          ← $HIP
+│   └── <scene_name>/             ← per-shot folder (from Nimbus scene setting)
+│       └── untitled.hiplc        ← $HIPFILE (initial scene file)
+├── render/                       ← $RENDER
+└── usd/                          ← $USD
+```
+
+### Environment variables set by Nimbus
+
+| Variable | Points to | Purpose |
+|----------|-----------|---------|
+| **`$JOB`** | Project root | Main project directory |
+| **`$HIP`** | `<project>/hip` | Scene / hip save location |
+| **`$HIPFILE`** | `<project>/hip/<scene>/untitled.hiplc` | Current hip file path |
+| **`$ASSET`** | `<project>/assets` | Assets |
+| **`$CACHE`** | `<project>/cache` | Simulation / geometry caches |
+| **`$FLIPBOOK`** | `<project>/flipbook` | Flipbook image sequences & reviews |
+| **`$RENDER`** | `<project>/render` | Render output |
+| **`$USD`** | `<project>/usd` | USD exports |
+
+**Example values** (project at `D:/Houdini/PipelineTest`, scene `shot01`):
+
+| Variable | Example value |
+|----------|----------------|
+| `JOB` | `D:/Houdini/PipelineTest` |
+| `ASSET` | `D:/Houdini/PipelineTest/assets` |
+| `CACHE` | `D:/Houdini/PipelineTest/cache` |
+| `FLIPBOOK` | `D:/Houdini/PipelineTest/flipbook` |
+| `HIP` | `D:/Houdini/PipelineTest/hip` |
+| `RENDER` | `D:/Houdini/PipelineTest/render` |
+| `USD` | `D:/Houdini/PipelineTest/usd` |
+| `HIPFILE` | `D:/Houdini/PipelineTest/hip/shot01/untitled.hiplc` |
+
+These variables are used across Nimbus tools (cache paths, flipbook output, farm submission, open-folder buttons, etc.).
+
+### Project registry
+
+All projects are stored in a single JSON file (per machine / user):
 
 ```
 {HOME}/NimbusProjects/projects.json
 ```
+
+Each entry stores the project **name**, **path**, and **FPS**. Selecting a project in the Nimbus HDA reloads that path and reapplies the folder structure and variables above.
+
+---
+
+## 💡 Basic Workflow
+
+### 1. Create or select a project
+
+Create a **Nimbus** node in OBJ context.
+
+- **Add Project** — create a new project folder or register an existing one (pick any base directory you want)  
+- **Project** dropdown — select a registered project  
+- Set **Sequence**, **Shot**, and **Scene** as needed  
+
+Nimbus applies the directory layout and environment variables described above automatically.
 
 ### 2. Create caches
 
@@ -325,6 +388,7 @@ print("Nimbus OK")
 
 | Component | Supported |
 |-----------|-----------|
+| Houdini 20.0 | ✅ |
 | Houdini 20.5 | ✅ |
 | Houdini 21.0 | ✅ |
 | Windows | ✅ |
