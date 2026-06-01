@@ -118,7 +118,6 @@ Each flipbook render and MP4 file follows the project naming convention and is s
 |----------|--------------|
 | **Flipbook Path** | Displays the output path for the image sequence. Automatically versioned based on the current project, scene, and user. <br>Example: `E:/Houdini/NimbusDemo/flipbook/demo12/v023/NimbusDemo_demo12_pushkar_fx_001_v023.$F4.jpg` |
 | **MP4 Path** | Shows the path for the generated MP4 file, automatically created from the image sequence after the flipbook completes. <br>Example: `E:/Houdini/NimbusDemo/flipbook/demo12/v023/MP4/NimbusDemo_demo12_pushkar_fx_001_v023.mp4` |
-| **Cook Flipbook** | Starts the flipbook render process using the specified frame range, camera, and resolution. |
 | **Available Flipbook** | Displays previously generated flipbooks in a dropdown list for quick access and playback. |
 | **Play Flipbook** | Opens the selected flipbook MP4 or image sequence in the system’s default media player. |
 | **Delete Flipbook** | Permanently removes the selected flipbook version (both image sequence and MP4) from disk. |
