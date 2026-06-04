@@ -1,0 +1,8 @@
+{
+    "env": [
+        { "NIMBUS_ROOT": "E:/Nimbus/H21_0" },
+        { "PYTHONPATH": "$NIMBUS_ROOT/scripts/python;&" },
+        { "HOUDINI_OTLSCAN_PATH": "$NIMBUS_ROOT/otls;&" },
+        { "HOUDINI_MENU_PATH": "$NIMBUS_ROOT/menus;&" }
+    ]
+}
