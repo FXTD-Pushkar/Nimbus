@@ -4,10 +4,8 @@
 
 **Repository:** https://github.com/FXTD-Pushkar/Nimbus
 
-**Video Documentation:**
+**Video Documentation:** https://www.youtube.com/playlist?list=PL4Pe_U0h-1m0u5-azS7nnViXO0EHMzuJ0
 
-OBJ HDA – Project Management Workflow
-https://www.youtube.com/playlist?list=PL4Pe_U0h-1m0u5-azS7nnViXO0EHMzuJ0
 ---
 
 ## ✨ Features
