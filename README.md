@@ -120,12 +120,12 @@ Houdini loads packages from:
 
 | Houdini | Typical location (Windows) |
 |---------|----------------------------|
-| **21.0** | `C:\Users\<USERNAME>\Documents\houdini21.0\packages\nimbus_h20.5.json` |
-| **20.5** | `C:\Users\<USERNAME>\Documents\houdini20.5\packages\nimbus_h21.0.json` |
+| **21.0** | `C:\Users\<USERNAME>\Documents\houdini21.0\packages\nimbus_h21.0.json` |
+| **20.5** | `C:\Users\<USERNAME>\Documents\houdini20.5\packages\nimbus_h20.5.json` |
 
 Paths vary by user, for example:
 
-- `C:\Users\artist01\Documents\houdini21.0\packages\nimbus_h20.5.json`
+- `C:\Users\artist01\Documents\houdini20.5\packages\nimbus_h20.5.json`
 - `C:\Users\artist01\OneDrive\Documents\houdini21.0\packages\nimbus_h21.0.json`
 
 On **Linux / macOS**, use the matching folder under your home directory, for example:
