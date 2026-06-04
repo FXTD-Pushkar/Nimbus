@@ -2,14 +2,34 @@
 
 All notable changes to this project will be documented in this file.
 
-## [0.1.0] - 2025-10-23
-### Initial Release
-- First public release of the **Nimbus Pipeline Tool**.
-- Includes the full Houdini HDA suite:
-  - **Nimbus (OBJ level)** — Project structure, environment variable setup, and naming automation.
-  - **SOP NimbusCache (SOP level)** — Geometry caching with auto-versioning, checkpoint resume, and multi-format export (.bgeo.sc, .vdb, .usd, .abc, .hbjson).
-  - **ROP NimbusCache (OUT level)** — Render/cache manager with background caching, HIP file backup, and email notification.
-- Added detailed documentation under `/docs` with setup and UI reference.
+## [1.0.0] - 2026-06-04
+
+### Initial Public Release
+
+- First public release of Nimbus.
+- Added Nimbus (OBJ) project management HDA.
+- Added Nimbus Cache (SOP) with:
+  - BGEO, VDB, Alembic, USD, and HBJSON support
+  - Auto versioning
+  - Checkpoint workflows
+  - Email notifications
+- Added Cache Manager:
+  - Cache browsing
+  - Approve / Unapprove versions
+  - Protected approved caches
+  - Cache cleanup tools
+- Added ROP NimbusCache:
+  - Cache dependency workflows
+  - Farm submission support
+  - Version synchronization
+- Added Flipbook tools:
+  - Image sequence generation
+  - MP4 generation via FFmpeg
+  - Flipbook browser and playback
+- Added VEX Snippet Manager.
+- Added Save Version / Minor Version workflows.
+- Added Batch Render utilities.
+- Added documentation and video tutorials.
 - Established repository metadata:
   - `LICENSE` (MIT)
   - `AUTHORS` file
