@@ -8,6 +8,15 @@
 
 ---
 
+## ⚠️ License Compatibility
+
+Nimbus is currently distributed as Houdini Indie (`.hdalc`) assets.
+
+A Houdini Indie license is required to use the included HDAs.
+
+---
+
+
 ## ✨ Features
 
 ### 📁 Project Management
