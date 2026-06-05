@@ -28,6 +28,7 @@ All notable changes to this project will be documented in this file.
   - Flipbook browser and playback
 - Added VEX Snippet Manager.
 - Added Save Version / Minor Version workflows.
+- Added Nimbus Load
 - Added Batch Render utilities.
 - Added documentation and video tutorials.
 - Established repository metadata:
