@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Nimbus menu (Houdini 20.5) — no hardcoded install paths.
+
+  Install Nimbus anywhere. Set NIMBUS_ROOT in a package JSON under:
+    $HOUDINI_USER_PREF_DIR/packages/nimbus_h20.5.json
+
+  Example package JSON (set NIMBUS_ROOT to your install folder):
+  {
+      "env": [
+          { "NIMBUS_ROOT": "<your-nimbus-H20_5-folder>" },
+          { "PYTHONPATH": "$NIMBUS_ROOT/scripts/python;&" },
+          { "HOUDINI_OTLSCAN_PATH": "$NIMBUS_ROOT/otls;&" },
+          { "HOUDINI_MENU_PATH": "$NIMBUS_ROOT/menus;&" }
+      ]
+  }
+-->
+<mainMenu>
+  <menuBar>
+
+    <subMenu id="Nimbus_menu">
+      <label>Nimbus</label>
+      <insertAfter>help_menu</insertAfter>
+
+      <separatorItem/>
+
+      <scriptItem id="nimbus_hip_open">
+        <label>Hip Open</label>
+        <scriptCode><![CDATA[
+import os, sys, traceback
+import hou
+
+def _run():
+    root = hou.getenv("NIMBUS_ROOT")
+    if not root:
+        prefs = hou.getenv("HOUDINI_USER_PREF_DIR") or ""
+        raise RuntimeError(
+            "NIMBUS_ROOT is not set.\n"
+            "Add a Nimbus package JSON under:\n  {0}/packages/".format(prefs)
+        )
+    pyroot = os.path.normpath(os.path.join(root, "scripts", "python"))
+    if pyroot not in sys.path:
+        sys.path.insert(0, pyroot)
+    fullname = "nimbus.nimbus_hip_open"
+    if fullname in sys.modules:
+        del sys.modules[fullname]
+    ver_name = os.path.basename(os.path.normpath(root))
+    src_py = os.path.normpath(os.path.join(root, "..", "sources", ver_name, "python", "nimbus", "nimbus_hip_open.py"))
+    if os.path.isfile(src_py):
+        import importlib.util
+        spec = importlib.util.spec_from_file_location(fullname, src_py)
+        mod = importlib.util.module_from_spec(spec)
+        sys.modules[fullname] = mod
+        spec.loader.exec_module(mod)
+        for name in ("_show_dialog", "show_dialog", "main"):
+            fn = getattr(mod, name, None)
+            if callable(fn):
+                fn()
+                return
+    from nimbus.nimbus_menu_loader import launch
+    launch("nimbus_hip_open", ("_show_dialog", "show_dialog", "main"))
+
+try:
+    _run()
+except Exception:
+    hou.ui.displayMessage("Nimbus Hip Open launch error:\n" + traceback.format_exc())
+        ]]></scriptCode>
+      </scriptItem>
+
+      <scriptItem id="save_version">
+        <label>Save Version</label>
+        <scriptCode><![CDATA[
+import os, sys, traceback
+import hou
+
+def _run():
+    root = hou.getenv("NIMBUS_ROOT")
+    if not root:
+        prefs = hou.getenv("HOUDINI_USER_PREF_DIR") or ""
+        raise RuntimeError(
+            "NIMBUS_ROOT is not set.\n"
+            "Add a Nimbus package JSON under:\n  {0}/packages/".format(prefs)
+        )
+    pyroot = os.path.normpath(os.path.join(root, "scripts", "python"))
+    if pyroot not in sys.path:
+        sys.path.insert(0, pyroot)
+    from nimbus.nimbus_menu_loader import launch
+    launch("save_new_version", ("save_new_version", "main"))
+
+try:
+    _run()
+except Exception:
+    hou.ui.displayMessage("Save Version error:\n" + traceback.format_exc())
+        ]]></scriptCode>
+      </scriptItem>
+
+      <scriptItem id="save_minor_version">
+        <label>Save Minor Version</label>
+        <scriptCode><![CDATA[
+import os, sys, traceback
+import hou
+
+def _run():
+    root = hou.getenv("NIMBUS_ROOT")
+    if not root:
+        prefs = hou.getenv("HOUDINI_USER_PREF_DIR") or ""
+        raise RuntimeError(
+            "NIMBUS_ROOT is not set.\n"
+            "Add a Nimbus package JSON under:\n  {0}/packages/".format(prefs)
+        )
+    pyroot = os.path.normpath(os.path.join(root, "scripts", "python"))
+    if pyroot not in sys.path:
+        sys.path.insert(0, pyroot)
+    from nimbus.nimbus_menu_loader import launch
+    launch("save_minor_version", ("save_minor_version", "main"))
+
+try:
+    _run()
+except Exception:
+    hou.ui.displayMessage("Save Minor Version error:\n" + traceback.format_exc())
+        ]]></scriptCode>
+      </scriptItem>
+
+      <separatorItem/>
+
+      <scriptItem id="nimbus_cache_loader">
+        <label>Load</label>
+        <scriptCode><![CDATA[
+import os, sys, traceback
+import hou
+
+def _run():
+    root = hou.getenv("NIMBUS_ROOT")
+    if not root:
+        prefs = hou.getenv("HOUDINI_USER_PREF_DIR") or ""
+        raise RuntimeError(
+            "NIMBUS_ROOT is not set.\n"
+            "Add a Nimbus package JSON under:\n  {0}/packages/".format(prefs)
+        )
+    pyroot = os.path.normpath(os.path.join(root, "scripts", "python"))
+    if pyroot not in sys.path:
+        sys.path.insert(0, pyroot)
+    from nimbus.nimbus_menu_loader import launch
+    launch(
+        "nimbus_cache_loader",
+        ("open_cache_loader", "show_dialog", "_show_dialog", "main"),
+    )
+
+try:
+    _run()
+except Exception:
+    hou.ui.displayMessage("Nimbus Load launch error:\n" + traceback.format_exc())
+        ]]></scriptCode>
+      </scriptItem>
+
+      <scriptItem id="nimbus_cache_manager">
+        <label>Nimbus Cache Manager</label>
+        <scriptCode><![CDATA[
+import os, sys, traceback
+import hou
+
+def _run():
+    root = hou.getenv("NIMBUS_ROOT")
+    if not root:
+        prefs = hou.getenv("HOUDINI_USER_PREF_DIR") or ""
+        raise RuntimeError(
+            "NIMBUS_ROOT is not set.\n"
+            "Add a Nimbus package JSON under:\n  {0}/packages/".format(prefs)
+        )
+    pyroot = os.path.normpath(os.path.join(root, "scripts", "python"))
+    if pyroot not in sys.path:
+        sys.path.insert(0, pyroot)
+    from nimbus.nimbus_menu_loader import launch
+    launch(
+        "nimbus_cache_manager",
+        ("open_cache_manager", "show_dialog", "_show_dialog", "main"),
+    )
+
+try:
+    _run()
+except Exception:
+    hou.ui.displayMessage("Nimbus Cache Manager launch error:\n" + traceback.format_exc())
+        ]]></scriptCode>
+      </scriptItem>
+
+      <separatorItem/>
+
+      <scriptItem id="vex_snippet_manager">
+        <label>VEX Snippet Manager</label>
+        <scriptCode><![CDATA[
+import os, sys, traceback
+import hou
+
+def _run():
+    root = hou.getenv("NIMBUS_ROOT")
+    if not root:
+        prefs = hou.getenv("HOUDINI_USER_PREF_DIR") or ""
+        raise RuntimeError(
+            "NIMBUS_ROOT is not set.\n"
+            "Add a Nimbus package JSON under:\n  {0}/packages/".format(prefs)
+        )
+    pyroot = os.path.normpath(os.path.join(root, "scripts", "python"))
+    if pyroot not in sys.path:
+        sys.path.insert(0, pyroot)
+    from nimbus.nimbus_menu_loader import launch
+    launch("vex_snippet_manager", ("show_vex_snippet_tool", "main"))
+
+try:
+    _run()
+except Exception:
+    hou.ui.displayMessage("VEX Snippet Manager launch error:\n" + traceback.format_exc())
+        ]]></scriptCode>
+      </scriptItem>
+
+      <separatorItem/>
+
+      <scriptItem id="nimbus_make_flipbook">
+        <label>Render Flipbook (Sequence + MP4)</label>
+        <scriptCode><![CDATA[
+import os, sys, traceback
+import hou
+
+def _run():
+    root = hou.getenv("NIMBUS_ROOT")
+    if not root:
+        prefs = hou.getenv("HOUDINI_USER_PREF_DIR") or ""
+        raise RuntimeError(
+            "NIMBUS_ROOT is not set.\n"
+            "Add a Nimbus package JSON under:\n  {0}/packages/".format(prefs)
+        )
+    pyroot = os.path.normpath(os.path.join(root, "scripts", "python"))
+    if pyroot not in sys.path:
+        sys.path.insert(0, pyroot)
+    from nimbus.nimbus_menu_loader import launch
+    launch(
+        "nimbus_flipbook_ui",
+        ("run_nimbus_flipbook_with_ui", "show_flipbook_ui", "main"),
+    )
+
+try:
+    _run()
+except Exception:
+    hou.ui.displayMessage("Flipbook launch error:\n" + traceback.format_exc())
+        ]]></scriptCode>
+      </scriptItem>
+
+    </subMenu>
+
+  </menuBar>
+</mainMenu>
