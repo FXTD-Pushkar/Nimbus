@@ -1,4 +1,4 @@
-![Nimbus Toolkit](images/Nimbus_Feature_Image.png)
+![Nimbus Toolkit](images/obj_nimbus.png)
 
 # Nimbus - Houdini Pipeline Toolkit
 
