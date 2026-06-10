@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="images/Nimbus_Feature_Image.png" alt="Nimbus Toolkit" width="100%">
+</p>
+
 # Nimbus - Houdini Pipeline Toolkit
 
 **Nimbus** is a lightweight, artist-friendly Houdini pipeline toolkit for organizing projects, managing cache versions, rendering flipbooks, and submitting work to **HQueue** or **Deadline**.
