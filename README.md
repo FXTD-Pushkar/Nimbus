@@ -1,4 +1,4 @@
-# Nimbus - Houdini Pipeline Tool
+# Nimbus - Houdini Pipeline Toolkit
 
 **Nimbus** is a lightweight, artist-friendly Houdini pipeline toolkit for organizing projects, managing cache versions, rendering flipbooks, and submitting work to **HQueue** or **Deadline**.
 
