@@ -1,4 +1,4 @@
-![Nimbus OBJ HDA](../images/Nimbus_Feature_Image.png)
+![Nimbus](../images/Nimbus_Feature_Image.png)
 
 # Nimbus - Houdini Pipeline Toolkit
 
