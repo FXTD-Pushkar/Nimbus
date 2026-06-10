@@ -1,6 +1,4 @@
-<p align="center">
-  <img src="images/Nimbus_Feature_Image.png" alt="Nimbus Toolkit" width="100%">
-</p>
+![Nimbus OBJ HDA](../images/Nimbus_Feature_Image.png)
 
 # Nimbus - Houdini Pipeline Toolkit
 
