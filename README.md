@@ -1,4 +1,6 @@
-![Nimbus Toolkit](images/nimbus_feature_image.png)
+<p align="center">
+  <img src="images/nimbus_feature_image.png" alt="Nimbus Toolkit">
+</p>
 
 # Nimbus - Houdini Pipeline Toolkit
 
