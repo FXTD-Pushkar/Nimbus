@@ -349,33 +349,7 @@ Supported workflows include:
 
 ---
 
-# 📂 Usage 9: HIP Files Outside Nimbus Projects
-
-## When to Use
-
-A HIP file is not part of a Nimbus project.
-
-## Option A: Browse
-
-1. Click **Browse**.
-2. Select any HIP file.
-3. Click **Load HIP**.
-4. Select nodes.
-5. Click **Render Selected**.
-
-## Option B: Command Line
-
-Launch directly from a HIP file:
-
-```bash
-run_batchui.bat --hip "D:/client/scenes/shot010.hip"
-```
-
-This allows Batch Render to be used independently of Nimbus project management.
-
----
-
-# 📊 Usage 10: Monitor Long Running Jobs
+# 📊 Usage 9: Monitor Long Running Jobs
 
 ## When to Use
 
