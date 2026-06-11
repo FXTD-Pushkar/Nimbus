@@ -351,7 +351,21 @@ Supported workflows include:
 
 ---
 
-# 📊 Usage 9: Monitor Long Running Jobs
+# 📂 Usage 9: HIP without Nimbus project
+
+## When to Use
+
+A HIP file is not part of a Nimbus project.
+
+1. Click **Browse**.
+2. Select any HIP file.
+3. Click **Load HIP**.
+4. Select nodes.
+5. Click **Render Selected**.
+
+---
+
+# 📊 Usage 10: Monitor Long Running Jobs
 
 ## When to Use
 
