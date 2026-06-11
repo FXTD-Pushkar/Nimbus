@@ -53,7 +53,7 @@ A Houdini Indie license is required to use the included HDAs.
 - Nimbus Load (menu: Load)
 - Cache Manager
 - VEX Snippet Manager
-- Nimbus Batch Render UI — standalone batch cache and render monitor (progress, logs, resume)
+- Nimbus Batch Render UI - standalone batch cache and render monitor (progress, logs, resume)
 
 ---
 
