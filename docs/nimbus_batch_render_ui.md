@@ -1,5 +1,7 @@
 # ⚡ Nimbus Batch Render UI
 
+![Nimbus OBJ HDA](../images/batch_render_ui.png)
+
 Nimbus Batch Render is a standalone desktop utility included with Nimbus for managing Houdini cache and render jobs outside the Houdini UI.
 
 Built around Houdini's headless execution pipeline (`hython`, `hbatch`, and `husk`), the tool provides a centralized workflow for launching, monitoring, and resuming cache or render jobs from a single interface.
