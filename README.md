@@ -93,15 +93,20 @@ Use forward slashes in `nimbus.json` (Houdini accepts them on Windows).
 ```
 <your-chosen-path>/Nimbus/
 │
-├── H20_5/          ← Houdini 20.5
+├── H20_5/                          ← Houdini 20.5
 │   ├── menus/
 │   ├── otls/
 │   └── scripts/
 │
-└── H21_0/          ← Houdini 21.0
-    ├── menus/
-    ├── otls/
-    └── scripts/
+├── H21_0/                          ← Houdini 21.0
+│   ├── menus/
+│   ├── otls/
+│   └── scripts/
+│
+├── Nimbus_Houdini_Batch_Render/
+│   ├── run_batchui.bat             ← Launch Nimbus Batch Render
+│   │
+│   └── scripts/
 ```
 
 Use only the subfolder for the Houdini version(s) you run.
