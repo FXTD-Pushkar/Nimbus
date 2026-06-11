@@ -33,6 +33,7 @@ A Houdini Indie license is required to use the included HDAs.
 - Version dropdown sync
 - Approved cache system
 - Cache browser and Cache Manager
+- Nimbus Load — project-wide cache browser; import any scene’s cached version into the current HIP (bgeo, VDB, ABC, USD, Niagara)
 
 ### 🎞️ Flipbook Workflow
 - Image sequence rendering
@@ -49,9 +50,10 @@ A Houdini Indie license is required to use the included HDAs.
 - Save Version
 - Save Minor Version
 - Hip File Browser
+- Nimbus Load (menu: Load)
 - Cache Manager
 - VEX Snippet Manager
-- Batch Render Tool
+- Nimbus Batch Render UI — standalone batch cache and render monitor (progress, logs, resume)
 
 ---
 
