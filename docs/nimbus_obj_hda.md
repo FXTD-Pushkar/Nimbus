@@ -1,4 +1,4 @@
-# 🌀 Nimbus (OBJ Level) — Project and Shot Manager
+# 🌀 Nimbus (OBJ Level) - Project and Shot Manager
 
 ![Nimbus OBJ HDA](../images/obj_nimbus.png)
 
