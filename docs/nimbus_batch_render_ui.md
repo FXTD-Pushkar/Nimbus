@@ -353,8 +353,6 @@ Supported workflows include:
 
 # 📂 Usage 9: HIP without Nimbus project
 
-## When to Use
-
 A HIP file is not part of a Nimbus project.
 
 1. Click **Browse**.
