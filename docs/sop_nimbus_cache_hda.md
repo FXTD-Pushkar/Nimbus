@@ -1,4 +1,4 @@
-# Nimbus Cache (SOP Level) — Cache & Export Operator
+# Nimbus Cache (SOP Level) - Cache & Export Operator
 
 ![Nimbus Cache HDA](../images/sop_nimbus_cache.png)
 *The SOP-level HDA used for export/caching and version control.*
