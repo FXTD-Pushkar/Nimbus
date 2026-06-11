@@ -394,24 +394,6 @@ The log window is designed to help artists quickly identify failed frames, missi
 
 ---
 
-# 💡 Recommended Workflow
-
-```text
-Build FX
-   ↓
-Nimbus Cache
-   ↓
-Nimbus Batch Render
-   ↓
-Validate Output
-   ↓
-Farm Submission
-```
-
-This workflow allows artists to generate, monitor, resume, and validate cache or render jobs efficiently before sending work to HQueue, Deadline, Tractor, or other farm systems.
-
----
-
 # 📌 Notes
 
 - Houdini does not need to be open.
